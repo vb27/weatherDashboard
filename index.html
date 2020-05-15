@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather</title>
+    
+</head>
+<body>
+    <header class="bg-secondary">
+        <h1 class="head">Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid ">
+        <div class="row ">
+            <aside class="col-md-3 border border-primary m rounded">
+                <div class="row">
+                    <div class="col-md-12"> 
+                        <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="Search" id="search">
+                        <button class="btn btn-success" type="submit" id="searchBtn">Search</button>
+                    </div>
+
+                </div>
+                <div id="prevSearches"></div>
+                
+            </aside>
+            <div class="col-md-8">
+                <section class="row border border-primary rounded" id="currentWeather">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12" id="cityDiv"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="weatherDiv"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="tempDiv"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="humidityDiv"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="windSpeedDiv"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1" id="uvDivCol1"></div>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="row border border-primary rounded mt" id="extendedForecast">
+                    <div class="col-md-2 extended">
+                        <div class="row">
+                            <div class="col-md-12" id="dayOneDate"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayOneWeather"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayOneTemp"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayOneHumidity"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 extended">
+                        <div class="row">
+                            <div class="col-md-12" id="dayTwoDate"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayTwoWeather"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayTwoTemp"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayTwoHumidity"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 extended">
+                        <div class="row">
+                            <div class="col-md-12" id="dayThreeDate"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayThreeWeather"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayThreeTemp"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayThreeHumidity"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 extended">
+                        <div class="row">
+                            <div class="col-md-12" id="dayFourDate"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayFourWeather"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayFourTemp"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayFourHumidity"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 extended">
+                        <div class="row">
+                            <div class="col-md-12" id="dayFiveDate"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayFiveWeather"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayFiveTemp"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="dayFiveHumidity"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
